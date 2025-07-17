@@ -24,7 +24,7 @@ export const summary = internalAction({
     if (!apiKey) {
       const error = missingEnvVariableUrl(
         "OPENAI_API_KEY",
-        "https://platform.openai.com/account/api-keys"
+        "https://platform.openai.com/account/api-keys",
       );
       console.error(error);
       await ctx.runMutation(internal.openai.saveSummary, {

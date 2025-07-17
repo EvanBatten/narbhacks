@@ -111,6 +111,7 @@ pnpm run check
 ```
 
 The configuration is defined in [`biome.json`](./biome.json) and includes:
+
 - TypeScript and React-specific rules
 - Accessibility checks
 - Security best practices

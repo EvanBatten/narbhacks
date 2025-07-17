@@ -13,7 +13,7 @@ import type {
   FilterApi,
   FunctionReference,
 } from "convex/server";
-import type * as notes from "../notes.js";
+import type * as challenges from "../challenges.js";
 import type * as openai from "../openai.js";
 import type * as utils from "../utils.js";
 
@@ -26,7 +26,7 @@ import type * as utils from "../utils.js";
  * ```
  */
 declare const fullApi: ApiFromModules<{
-  notes: typeof notes;
+  challenges: typeof challenges;
   openai: typeof openai;
   utils: typeof utils;
 }>;

@@ -1,6 +1,6 @@
+import type { Id } from "@packages/backend/convex/_generated/dataModel";
 import Link from "next/link";
 import DeleteNote from "./DeleteNote";
-import type { Id } from "@packages/backend/convex/_generated/dataModel";
 
 interface NoteItemProps {
   note: {

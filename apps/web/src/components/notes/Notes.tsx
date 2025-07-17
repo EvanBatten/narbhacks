@@ -47,7 +47,11 @@ const Notes = () => {
 
       <div className="border-[0.5px] mb-20 divide-y-[0.5px] divide-[#00000096] border-[#00000096]">
         {finalNotes?.map((note) => (
-          <NoteItem key={note._id} note={note} deleteNote={deleteNote} />
+          <NoteItem
+            key={note._id}
+            note={note}
+            deleteNote={(noteId) => deleteNote({ noteId })}
+          />
         ))}
       </div>
 

@@ -1,14 +1,15 @@
 import Link from "next/link";
 import DeleteNote from "./DeleteNote";
+import type { Id } from "@packages/backend/convex/_generated/dataModel";
 
 interface NoteItemProps {
   note: {
-    _id: string;
+    _id: Id<"notes">;
     title: string;
     content: string;
     _creationTime: number;
   };
-  deleteNote: (noteId: string) => void;
+  deleteNote: (noteId: Id<"notes">) => void;
 }
 
 const NoteItem = ({ note, deleteNote }: NoteItemProps) => {
